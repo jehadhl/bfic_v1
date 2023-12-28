@@ -8,7 +8,7 @@ import axios from "axios";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const WhatIsBfic = ({ dataPrice, dataGetStatics }) => {
+const WhatIsBfic = () => {
   const ease = new Power3.easeInOut();
   const refConetnt = useRef();
   const refImages = useRef();
@@ -45,9 +45,7 @@ const WhatIsBfic = ({ dataPrice, dataGetStatics }) => {
       }
     );
   }, []);
-  //console.log(dataPrice, "dasdasfasd");
-  const priceBficApi = dataPrice?.response[0]?.LastPrice;
-  const num = new Number(priceBficApi);
+
 
   return (
     <section className={styles.whatIsBfic} id="aboutBfic">
@@ -55,32 +53,25 @@ const WhatIsBfic = ({ dataPrice, dataGetStatics }) => {
         <div className={styles.content}>
           <div className={styles.price}>
             <h2 className={styles.textItems}>Price</h2>
-            <p className={styles.paragraphItems}>{num.toFixed(3)}$</p>
+            <p className={styles.paragraphItems}>21$</p>
           </div>
           <div className={styles.price}>
             <h2 className={styles.textItems}>Total Transactions</h2>
             <p className={styles.paragraphItems}>
-              {dataGetStatics?.totalTransactions}
+              1231244123
             </p>
           </div>
           <div className={styles.price}>
             <h2 className={styles.textItems}>Holders</h2>
-            <p className={styles.paragraphItems}>{dataGetStatics?.holders}</p>
+            <p className={styles.paragraphItems}>1200000</p>
           </div>
           <div className={styles.price}>
             <h2 className={styles.textItems}>Block Time</h2>
             <p className={styles.paragraphItems}>
-              {dataGetStatics?.blockTime?.substring(0, 5)}
+              31231233
             </p>
           </div>
-          {dataBfic.map((item) => {
-            return (
-              <div className={styles.items} key={item.id}>
-                <h2 className={styles.textItems}>{item.name}</h2>
-                <p className={styles.paragraphItems}> {item.number}</p>
-              </div>
-            );
-          })}
+       
         </div>
       </div>
       <div className={styles.conatiner}>

@@ -12,7 +12,7 @@ import CardsBfic from "@/components/Cards/CardsBfic";
 import axios from "axios";
 import { apigetStatic, apiPriceUrl } from "@/utils/constants";
 
-function Home({ dataPrice, dataGetStatics }) {
+function Home() {
   return (
     <>
       <Head>
@@ -26,7 +26,7 @@ function Home({ dataPrice, dataGetStatics }) {
           <Navbar />
           <Hero />
         </div>
-        <WhatIsBfic dataPrice={dataPrice} dataGetStatics={dataGetStatics} />
+        <WhatIsBfic  />
         <CardsBfic />
         <BficBlockChain />
         <CrossBlockchain />
