@@ -1,0 +1,64 @@
+.footer {
+  @apply border border-clr-yellow-normal border-x-0;
+
+  .container {
+    @apply max-w-[1440px] mx-auto py-16 w-[85vw];
+
+    .container_footer {
+      @apply grid S-1000:grid-cols-5  S-600:grid-cols-3 gap-4 S-250:grid-cols-1;
+
+      .Items {
+        .title {
+          @apply text-white font-semibold S-600:text-2xl S-250:text-xl S-250:mt-8 S-600:mt-0;
+        }
+
+        .listItem {
+          @apply S-250:grid S-1000:block  S-250:grid-cols-2 gap-4  S-250:my-4;
+          .item {
+            @apply text-white S-250:text-sm S-600:text-base S-1000:pt-8 S-250:pt-4 S-250:pr-4 S-600:pr-0 cursor-pointer;
+          }
+        }
+      }
+
+      .infoBtn {
+        @apply S-250:mt-8 S-600:mt-0;
+        .btnAboutBfic {
+          .titleAboutBfic {
+            @apply text-white S-600:text-2xl S-250:text-xl font-medium;
+
+            .spanTitle {
+              @apply text-clr-yellow-normal font-semibold;
+            }
+          }
+
+          .btnBfic {
+            @apply border border-clr-yellow-normal text-white mt-3 py-2 px-8 rounded-sm S-600:text-[22px] S-250:text-base font-semibold;
+          }
+        }
+
+        .btnbuyBfic {
+          @apply mt-10;
+          .titleBuyBfic {
+            @apply text-white S-600:text-2xl S-250:text-xl font-medium;
+
+            .spanTitle {
+              @apply text-clr-yellow-normal font-semibold;
+            }
+          }
+
+          .btnBuyBfic {
+            @apply bg-clr-yellow-normal mt-3 py-2 px-8 rounded-sm text-clr-black-normal S-600:text-[22px] S-250:text-base font-semibold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copy {
+  @apply max-w-[1440px];
+
+  .copyRight {
+    @apply text-white py-6 S-600:pl-20 S-250:px-8;
+  }
+}

@@ -1,0 +1,53 @@
+.contentTimeLine {
+  @apply h-full flex items-center  relative w-full;
+
+  .imageBox {
+    @apply w-[500px];
+  }
+
+  .contentDown {
+    @apply absolute S-1000:bottom-[320px] S-250:bottom-[350px] left-[10%] S-600:text-4xl S-250:text-2xl font-bold mr-[40px] z-30 w-full text-clr-yellow-normal;
+  }
+
+  .contentUp {
+    @apply absolute  S-1000:top-[320px] S-250:top-[350px]  S-600:text-4xl S-250:text-2xl font-bold right-[30%] text-clr-yellow-normal;
+  }
+
+  .monthDown {
+    @apply absolute S-1000:bottom-[280px] S-250:bottom-[310px]  left-[10%] S-600:text-xl S-250:text-base font-normal mr-[40px] z-30 w-full text-clr-yellow-normal;
+  }
+
+  .monthUp {
+    @apply absolute S-1000:top-[280px] S-250:top-[310px] S-600:text-xl S-250:text-base  font-normal right-[30%] text-clr-yellow-normal;
+  }
+
+  .listDown {
+    @apply absolute text-white S-250:bottom-[100px] S-1000:bottom-[70px] left-[9%]  h-[200px]  flex flex-col justify-start;
+    .boxImages {
+      @apply h-[38px] w-[160px] my-[8px] flex justify-center items-center;
+
+      .icons {
+        @apply h-full;
+      }
+    }
+
+    .icons {
+      @apply h-full;
+    }
+  }
+
+  .listUp {
+    @apply absolute text-white S-250:top-[100px] S-1000:top-[70px] right-[90px]  h-[200px]  flex flex-col justify-end;
+    .boxImages {
+      @apply h-[38px] w-[160px] my-[8px] flex justify-center items-center;
+
+      .icons {
+        @apply h-full;
+      }
+    }
+
+    .icons {
+      @apply h-full;
+    }
+  }
+}

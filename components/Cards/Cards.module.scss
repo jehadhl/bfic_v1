@@ -1,0 +1,37 @@
+.cards {
+  @apply S-1000:h-[50vh] S-250:h-full my-10 relative;
+
+  .container {
+    @apply w-[90vw] max-w-[1400px] mx-auto  grid S-1000:grid-cols-3 S-600:grid-cols-2 h-full flex-wrap gap-10 place-items-center;
+
+    .card {
+      background: rgba(15, 15, 16, 0.01);
+      box-shadow: 0px 0px 24px rgba(255, 206, 0, 0.2);
+      backdrop-filter: blur(37px);
+      background: linear-gradient(
+       -45deg,
+        #f4df04 5%,
+        #ffe60031 10%,
+        rgba(255, 255, 255, 0) 88.52%,
+        #f4df04 96.06%
+      );
+
+      @apply rounded-xl max-w-[350px] w-full p-[1px];
+
+      .cardContent {
+        @apply w-full rounded-xl py-6  flex justify-center flex-col items-center bg-clr-black-normal;
+
+        .image {
+          @apply h-[110px];
+        }
+        .title {
+          @apply text-clr-yellow-normal py-2 font-semibold text-lg;
+        }
+
+        .number {
+          @apply text-white S-600:text-4xl S-250:text-3xl font-normal;
+        }
+      }
+    }
+  }
+}

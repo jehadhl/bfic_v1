@@ -1,0 +1,33 @@
+.TopCrawlers {
+  @apply py-10 S-600:h-[80vh] S-250:h-full;
+
+  .title {
+    @apply text-white font-normal S-600:text-4xl  S-250:text-3xl S-250:mb-10 S-600:mb-0  text-center S-250:px-4 S-600:px-0;
+
+    .spanTitle {
+      @apply text-clr-yellow-normal font-bold;
+    }
+  }
+
+  .conatiner {
+    @apply max-w-[1000px] mx-auto h-[95%] w-[90vw];
+
+    .logos {
+      @apply h-[95%] justify-center items-center flex;
+
+      .imagesTopCrawlers {
+        @apply flex flex-wrap S-600:gap-14 S-250:gap-4 justify-center;
+
+        .imageUrl {
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+
+          &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+          }
+        }
+      }
+    }
+  }
+}

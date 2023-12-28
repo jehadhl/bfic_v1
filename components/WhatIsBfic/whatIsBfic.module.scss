@@ -1,0 +1,82 @@
+.whatIsBfic {
+  @apply S-250:h-full relative S-1000:mb-20 S-250:mb-0;
+
+  .scrollText {
+    @apply border border-clr-yellow-normal  border-l-0 border-r-0;
+
+    .content {
+      @apply flex justify-between max-w-[1440px] mx-auto items-center gap-20 py-4 overflow-x-scroll w-[90vw] scrollbar-hide;
+
+      .price {
+        .textItems {
+          clear: both;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          @apply text-clr-yellow-normal text-[22px] font-semibold;
+        }
+
+        .paragraphItems {
+          @apply text-clr-yellow-normal;
+        }
+      }
+
+      .items {
+        @apply py-2;
+
+        .textItems {
+          clear: both;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          @apply text-clr-yellow-normal text-[22px] font-semibold;
+        }
+
+        .paragraphItems {
+          @apply text-clr-yellow-normal;
+        }
+      }
+    }
+  }
+  .conatiner {
+    @apply max-w-[1440px] mx-auto  w-[90vw] S-250:py-20 S-1100:py-0;
+
+    .gridSection {
+      @apply flex justify-between S-600:flex-row S-250:flex-col place-content-center place-items-center h-full;
+
+      .images {
+        @apply w-full flex flex-col justify-center S-1000:flex-[3] S-600:flex-[2] S-250:order-1 S-600:order-2;
+
+        .bficCoin {
+          @apply w-full h-full;
+          .imageBfic {
+            @apply w-full object-cover h-full;
+          }
+        }
+
+        .earth {
+          @apply w-full  bg-clr-black-normal  h-full relative;
+          .earthImage {
+            @apply w-full absolute S-1100:top-[-200px] S-1000:top-[-130px] S-600:top-[-90px] S-250:top-[-85px] z-[-1];
+          }
+        }
+      }
+
+      .contents {
+        @apply flex justify-center flex-col flex-[2] S-250:mt-4 S-600:mt-0 S-250:order-2 S-600:order-1;
+
+        .title {
+          @apply S-1000:text-4xl S-250:text-2xl text-white capitalize;
+
+          .spanTitle {
+            @apply text-clr-yellow-normal font-bold;
+          }
+        }
+
+        .paragraph {
+          @apply text-white S-250:text-sm S-600:text-base leading-6 max-w-[600px] mt-3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.crossBlockchain {
+  @apply S-1100:h-[90vh] S-600:h-[55vh] S-250:h-full py-10;
+  .conatiner {
+    @apply max-w-[1440px] mx-auto h-full w-[90vw];
+
+    .gridSection {
+      @apply grid S-600:grid-cols-2 S-250:grid-cols-1 place-content-center place-items-center h-full  gap-10;
+
+      .images {
+        @apply w-full flex flex-col justify-center S-250:order-1 S-600:order-2;
+
+        .bficCoin {
+          @apply w-full;
+          .imageBfic {
+            @apply w-full;
+          }
+        }
+
+        .earth {
+          @apply w-full relative;
+          .earthImage {
+            @apply w-full absolute top-[-170px];
+          }
+        }
+      }
+
+      .contents {
+        @apply flex justify-center flex-col S-250:order-2 S-600:order-1;
+
+        .title {
+          @apply S-600:text-[42px] S-250:text-3xl text-white leading-[50px];
+
+          .spanTitle {
+            @apply text-clr-yellow-normal font-bold;
+          }
+        }
+
+        .paragraph {
+          @apply text-white leading-6 max-w-[600px] mt-3 S-600:text-base S-250:text-sm pr-9;
+        }
+      }
+    }
+  }
+}

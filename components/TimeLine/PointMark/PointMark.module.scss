@@ -1,0 +1,39 @@
+.contentTimeLine {
+  @apply h-full flex items-center  relative w-full;
+
+  .imageBox {
+    @apply w-[500px];
+  }
+
+  .contentDown {
+    @apply text-white absolute S-1000:bottom-[170px] S-250:bottom-[190px]  S-600:text-4xl S-250:text-2xl font-bold mr-[40px] z-30 w-full;
+  }
+
+  .listDown {
+    @apply absolute text-white  left-[10%];
+
+    .listItem {
+      list-style-type: disc;
+      @apply text-white flex justify-start flex-col;
+      .item {
+        @apply text-white py-1 text-sm;
+      }
+    }
+  }
+
+  .listUp {
+    @apply absolute text-white  S-1000:top-[40px] S-250:top-[60px]  right-[20%];
+
+    .listItem {
+      list-style-type: disc;
+      @apply text-white flex h-[110px]  text-left justify-end flex-col;
+      .item {
+        @apply text-white py-1 text-sm;
+      }
+    }
+  }
+
+  .contentUp {
+    @apply text-white absolute S-1000:top-[170px] S-250:top-[200px] S-600:text-4xl S-250:text-2xl font-bold right-[20%];
+  }
+}

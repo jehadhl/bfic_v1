@@ -1,0 +1,87 @@
+.supportedWallets {
+  @apply py-10 S-250:h-full;
+
+  .title {
+    @apply text-white font-normal S-600:text-4xl S-250:text-3xl S-250:mb-10 S-600:mb-0 text-center;
+
+    .spanTitle {
+      @apply text-clr-yellow-normal font-bold;
+    }
+  }
+  .container {
+    @apply max-w-[1000px] mx-auto h-full;
+
+    .supportedWallets {
+      @apply grid S-1000:grid-cols-3  S-250:grid-cols-1 S-600:grid-cols-2 gap-10 place-content-center h-full  place-items-center my-14;
+
+      .projects:nth-child(1) {
+        .card {
+          background: rgba(15, 15, 16, 0.01);
+          box-shadow: 0px 0px 24px rgba(226, 32, 39, 0.3);
+          backdrop-filter: blur(37px);
+          background: linear-gradient(
+            -45deg,
+            rgb(226, 32, 39) 5%,
+            rgba(226, 32, 39, 0.233) 10%,
+            rgba(255, 255, 255, 0) 88.52%,
+            rgb(226, 32, 39) 96.06%
+          );
+          @apply rounded-xl  p-[1px];
+          .cardImage {
+            @apply bg-clr-black-normal w-[280px] h-[180px] flex justify-center items-center py-4 px-8 rounded-xl;
+          }
+        }
+
+        .titleProjects {
+          @apply text-white text-center pt-4 text-xl;
+        }
+      }
+
+      .projects:nth-child(2) {
+        .card {
+          background: rgba(15, 15, 16, 0.01);
+          box-shadow: 0px 0px 24px rgba(0, 120, 150, 0.3);
+          backdrop-filter: blur(37px);
+          background: linear-gradient(
+            -45deg,
+            rgb(1, 204, 255) 5%,
+            rgba(0, 120, 150, 0.233) 10%,
+            rgba(255, 255, 255, 0) 88.52%,
+            rgb(0, 204, 255) 96.06%
+          );
+          @apply rounded-xl  p-[1px];
+          .cardImage {
+            @apply bg-clr-black-normal w-[280px] h-[180px] flex justify-center items-center py-4 px-8 rounded-xl;
+          }
+        }
+
+        .titleProjects {
+          @apply text-white text-center pt-4 text-xl;
+        }
+      }
+
+      .projects:nth-child(3) {
+        .card {
+          background: rgba(15, 15, 16, 0.01);
+          box-shadow: 0px 0px 24px rgba(245, 132, 31, 0.3);
+          backdrop-filter: blur(37px);
+          background: linear-gradient(
+            -45deg,
+            rgb(245, 131, 31) 5%,
+            rgba(245, 132, 31, 0.3) 10%,
+            rgba(255, 255, 255, 0) 88.52%,
+            rgb(245, 131, 31) 96.06%
+          );
+          @apply rounded-xl  p-[1px];
+          .cardImage {
+            @apply bg-clr-black-normal w-[280px] h-[180px] flex justify-center items-center py-4 px-8 rounded-xl;
+          }
+        }
+
+        .titleProjects {
+          @apply text-white text-center pt-4 text-xl;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.timeLine {
+  @apply relative py-10 my-20 h-full overflow-hidden;
+
+  .content {
+    @apply max-w-[1500px] mx-auto w-[85vw];
+    .titleContents {
+      @apply text-clr-yellow-normal text-3xl font-semibold;
+    }
+
+    .paragraphContents {
+      @apply text-white pt-4 max-w-[600px];
+    }
+  }
+
+  .dragSwiper {
+    transform: translateX(-50%);
+    @apply absolute bottom-[13%] left-[50%] flex justify-center w-full
+      items-center gap-4;
+
+    .drag {
+      @apply text-white capitalize text-xl font-semibold;
+    }
+  }
+
+  .container {
+    @apply max-w-[1500px] mx-auto h-[100vh] relative w-[90vw];
+
+    .maskRight {
+      @apply absolute S-1000:right-0 S-250:right-[-80px] h-full;
+    }
+
+    .TimelinLoop {
+      transform: translateY(-50%);
+      overflow-y: hidden;
+      @apply flex items-center absolute top-[50%] 
+        w-full max-w-[1400px] overflow-x-scroll scrollbar-hide h-[500px];
+    }
+  }
+}

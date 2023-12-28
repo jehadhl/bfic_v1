@@ -1,0 +1,225 @@
+.GetYourBfic {
+  @apply py-10 S-1000:h-[90vh] S-250:h-full;
+
+  .container {
+    @apply mx-auto max-w-[1440px] w-[80vw] h-[90%];
+
+    .titleGetYourBfic {
+      @apply text-center S-600:text-4xl S-250:text-3xl font-normal text-white S-250:mb-10 S-1000:mb-0;
+
+      .spanTitle {
+        @apply text-clr-yellow-normal font-bold;
+      }
+    }
+
+    .gridSection {
+      grid-column-gap: 7rem;
+      grid-row-gap: 5rem;
+      @apply grid S-1000:grid-cols-3 S-250:grid-cols-1 S-600:grid-cols-2 max-w-[1000px] h-[100%] place-content-center mx-auto mt-4;
+
+      .card:nth-child(1) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(255, 206, 0, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          #f4df04 5%,
+          #ffe60031 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          #f4df04 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal w-full  rounded-xl py-6 flex justify-center px-6 items-center flex-col h-full;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start;
+
+            .logo {
+              @apply h-[68px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full ;
+          }
+        }
+      }
+
+      .card:nth-child(2) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(0, 78, 216, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          rgba(0, 79, 216, 0.993) 5%,
+          rgba(0, 78, 216, 0.2) 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          rgb(0, 79, 216) 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal rounded-xl py-6 flex justify-center px-6 w-full h-full items-center flex-col;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start;
+
+            .logo {
+              @apply h-[68px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full;
+          }
+        }
+      }
+
+      .card:nth-child(3) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(255, 236, 170, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          rgb(255, 237, 170) 5%,
+          rgba(255, 237, 170, 0.219) 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          rgb(255, 237, 170) 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal rounded-xl py-6 flex justify-center px-6 w-full h-full items-center flex-col;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start;
+
+            .logo {
+              @apply h-[68px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full;
+          }
+        }
+      }
+
+      .card:nth-child(4) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(0, 208, 196, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          rgb(0, 208, 198) 5%,
+          rgba(0, 208, 198, 0.199) 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          rgb(0, 208, 198) 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal rounded-xl py-6 flex justify-center px-6 w-full h-full items-center flex-col;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start;
+
+            .logo {
+              @apply h-[68px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full;
+          }
+        }
+      }
+
+      .card:nth-child(5) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(86, 97, 255, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          rgb(86, 97, 255) 5%,
+          rgba(86, 97, 255, 0.2) 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          rgb(86, 97, 255) 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal rounded-xl py-6 flex justify-center px-6 w-full h-full items-center flex-col;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start;
+
+            .logo {
+              @apply h-[68px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full;
+          }
+        }
+      }
+
+      .card:nth-child(6) {
+        background: rgba(15, 15, 16, 0.01);
+        box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(37px);
+        background: linear-gradient(
+          -45deg,
+          rgb(255, 255, 255) 5%,
+          rgba(255, 255, 255, 0.2) 10%,
+          rgba(255, 255, 255, 0) 88.52%,
+          rgb(255, 255, 255) 96.06%
+        );
+        @apply rounded-xl  p-[1px];
+
+        .cardContent {
+          @apply bg-clr-black-normal rounded-xl py-6 flex justify-center px-6 w-full h-full items-center flex-col;
+
+          .flexProjects {
+            @apply flex items-center gap-4 w-full justify-start h-[68px];
+
+            .logo {
+              @apply h-[58px];
+            }
+
+            .title {
+              @apply text-white text-lg font-semibold;
+            }
+          }
+
+          .btn {
+            @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-4 mt-6 font-semibold rounded-md w-full;
+          }
+        }
+      }
+    }
+  }
+}

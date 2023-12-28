@@ -1,0 +1,57 @@
+.blogs {
+  @apply py-4 pb-20;
+
+  .container {
+    @apply max-w-[1600px] mx-auto;
+
+    .title {
+      @apply text-white text-4xl;
+
+      .spanTitle {
+        @apply text-clr-yellow-normal font-semibold;
+      }
+    }
+
+    .flexBlogs {
+      @apply grid  w-full gap-4 mt-6;
+
+      .cardBlogs {
+        .cardImage {
+          background: rgba(15, 15, 16, 0.01);
+          box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(37px);
+          border-image-source: linear-gradient(
+            138.1deg,
+            #ffffff -0.46%,
+            rgba(255, 255, 255, 0) 3.18%,
+            rgba(255, 255, 255, 0) 88.52%,
+            #ffffff 96.06%
+          );
+          @apply rounded-xl ;
+
+          .imgBox {
+            @apply p-4 w-full bg-clr-black-normal rounded-xl;
+            .imageBlog {
+              @apply rounded-xl w-full;
+            }
+          }
+        }
+        .contents {
+          @apply pt-6;
+
+          .contentsTitle {
+            @apply text-2xl text-white capitalize font-semibold;
+          }
+
+          .date {
+            @apply text-white font-extralight;
+          }
+
+          .btn {
+            @apply flex text-white items-center gap-4 mt-4;
+          }
+        }
+      }
+    }
+  }
+}

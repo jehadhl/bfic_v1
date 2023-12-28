@@ -1,0 +1,19 @@
+.socailMedia {
+  @apply py-10;
+
+  .container {
+    @apply max-w-[1600px] mx-auto w-[90vw];
+
+    .title {
+      @apply text-white S-1000:text-4xl S-250:text-3xl;
+
+      .spanTitle {
+        @apply text-clr-yellow-normal font-semibold;
+      }
+    }
+
+    .flexSocailMedia {
+      @apply grid S-1000:grid-cols-6 S-250:grid-cols-2 w-full my-8 gap-10 ;
+    }
+  }
+}

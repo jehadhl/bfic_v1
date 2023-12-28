@@ -1,0 +1,49 @@
+.buyBficHero {
+  @apply h-full relative  S-250:pt-[4.8rem] overflow-hidden;
+
+  .container {
+    @apply h-[100vh] w-full;
+
+    .flexConetnt {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      @apply grid  w-full h-full  place-items-center;
+
+      .content {
+        @apply max-w-[700px] px-4 S-250:pt-14 S-860:pt-0 bg-transparent;
+        .title {
+          @apply text-white S-600:text-[42px] S-250:text-3xl;
+          line-height: 50px !important;
+
+          .titleSpan {
+            @apply text-clr-yellow-normal font-bold;
+          }
+        }
+
+        .paragraph {
+          @apply text-white pt-4 max-w-[550px];
+        }
+      }
+      .boxImage {
+        @apply h-full relative w-full;
+        .image {
+          background-size: cover;
+          background-position: 50% 50%;
+   
+          @apply absolute right-0 S-600:bottom-[0px] h-full  w-full overflow-hidden object-cover  ;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .buyBficHero {
+    .container {
+      .flexConetnt {
+        grid-template-columns: 100% !important;
+        grid-template-rows: 40% 60% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.EcoSystemHero {
+  background-image: url("../../public/assets/Images/ecosystem.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  @apply h-[100vh] relative pt-[2.5rem]   w-full  object-cover ;
+
+  .content {
+  
+    @apply  h-full justify-center items-center flex-col flex text-center w-full px-4;
+
+    .title {
+      @apply text-white S-1000:text-4xl S-600:text-3xl S-250:text-3xl;
+
+      .spanTitle {
+        @apply text-clr-yellow-normal font-semibold;
+      }
+    }
+
+    .paragraph {
+      @apply text-white mt-6 max-w-[700px] mx-auto leading-7 S-250:text-sm;
+    }
+  }
+}

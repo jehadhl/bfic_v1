@@ -1,0 +1,41 @@
+.projectBFICNetwork {
+  @apply border border-clr-yellow-light border-l-0 border-r-0  S-250:h-full relative overflow-hidden;
+
+  .container {
+    @apply max-w-[1500px] mx-auto pt-[100px] relative w-[90vw] h-full;
+
+    .contents {
+      @apply text-center;
+      .title {
+        @apply text-white text-center S-1000:text-[42px] S-250:text-3xl;
+
+        .titleSpan {
+          @apply text-clr-yellow-normal font-semibold;
+        }
+      }
+
+      .paragraph {
+        @apply text-white max-w-[550px] mx-auto mt-4 S-600:text-base S-250:text-sm S-250:px-4 S-600:px-0;
+      }
+      .btn {
+        @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-8 font-semibold mt-16 rounded-md max-w-[300px] w-full capitalize S-600:text-xl S-250:text-base;
+      }
+    }
+
+    .projectImages {
+      @apply flex flex-wrap my-[100px] justify-center z-20 relative;
+
+      .itemImage {
+        @apply S-250:w-[85px] S-600:w-[120px];
+      }
+    }
+
+    .boxImage {
+      @apply absolute S-250:bottom-[-110px] S-600:bottom-[-250px] left-[50%] translate-x-[-50%] w-full;
+
+      .image {
+        @apply flex justify-center w-full max-w-[900px] mx-auto relative;
+      }
+    }
+  }
+}

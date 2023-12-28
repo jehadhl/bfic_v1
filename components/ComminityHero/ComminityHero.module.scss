@@ -1,0 +1,21 @@
+.comminityHero {
+  background-image: url("../../public/assets/Images/comminity.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  @apply h-[100vh] relative pt-[2.5rem];
+
+  .content {
+    @apply flex justify-center items-center h-[100vh] flex-col text-center;
+    .title {
+      @apply text-white S-1000:text-[42px] S-600:text-3xl S-250:text-3xl;
+
+      .spanTitle {
+        @apply text-clr-yellow-normal font-semibold;
+      }
+    }
+
+    .paragraph {
+      @apply text-white pt-3;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.bficBlockChain {
+  @apply S-1000:h-[100vh] S-600:h-full S-250:h-full py-10;
+  .conatiner {
+    @apply max-w-[1440px] mx-auto h-full  w-[90vw];
+
+    .gridSection {
+      @apply grid S-600:grid-cols-2 S-250:grid-cols-1 place-content-center place-items-center h-full gap-10;
+
+      .images {
+        @apply w-full;
+        .bficblockChainImage {
+          @apply w-full;
+
+          .imageBlockchain {
+            @apply w-full;
+          }
+        }
+      }
+
+      .earth {
+        @apply w-full relative;
+        .earthImage {
+          @apply w-full absolute top-[-170px];
+        }
+      }
+    }
+
+    .contents {
+      .title {
+        @apply S-600:text-[42px] S-250:text-3xl text-white;
+
+        .spanTitle {
+          @apply text-clr-yellow-normal font-bold;
+        }
+      }
+
+      .paragraph {
+        @apply text-white leading-6 max-w-[600px] S-600:text-base S-250:text-sm mt-3 mb-8;
+      }
+
+      .btn {
+        @apply bg-clr-yellow-normal text-clr-black-normal py-2 px-8 font-semibold rounded-md;
+      }
+    }
+  }
+}
