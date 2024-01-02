@@ -9,8 +9,7 @@ import ProjectBFICNetwork from "@/components/ProjectBFICNetwork/ProjectBFICNetwo
 import JoinBfic from "@/components/Joinbfic/JoinBfic";
 import TimeLine from "@/components/TimeLine/TimeLine";
 import CardsBfic from "@/components/Cards/CardsBfic";
-import axios from "axios";
-import { apigetStatic, apiPriceUrl } from "@/utils/constants";
+
 
 function Home() {
   return (
@@ -38,19 +37,19 @@ function Home() {
   );
 }
 
-export async function getServerSideProps() {
-  const resPrice = await fetch(apiPriceUrl);
+// export async function getServerSideProps() {
+//   const resPrice = await fetch(apiPriceUrl);
 
 
-  // const responseBficPrice = await axios.get(apiPriceUrl).then((res) => res.data)
-  // const responseGetStatics = await axios
-  //   .get(apigetStatic)
-  //   .then((res) => res.data)
-  return {
-    props: {
+//   // const responseBficPrice = await axios.get(apiPriceUrl).then((res) => res.data)
+//   // const responseGetStatics = await axios
+//   //   .get(apigetStatic)
+//   //   .then((res) => res.data)
+//   return {
+//     props: {
       
-    },
-  };
-}
+//     },
+//   };
+// }
 
 export default Home;
